@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Smartphone } from 'lucide-react'
 
 export default function PhoneMockup() {
   return (
@@ -13,15 +12,13 @@ export default function PhoneMockup() {
     >
       <div className="relative w-64 h-[500px] bg-gray-900 rounded-[3rem] p-2 shadow-2xl transform rotate-12 hover:rotate-6 transition-transform duration-500">
         <div className="w-full h-full bg-black rounded-[2.5rem] overflow-hidden flex flex-col">
-          {/* Notch */}
           <div className="h-6 w-32 bg-gray-900 mx-auto rounded-b-2xl relative z-10" />
           
-          {/* Screen Content */}
           <div className="flex-1 p-4 space-y-4 bg-gradient-to-br from-orange-50 to-white">
             <div className="glass p-3 rounded-lg">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                  <Smartphone size={16} className="text-white" />
+                  <span className="text-white text-sm">🤖</span>
                 </div>
                 <span className="text-sm font-medium">AlgoAI</span>
               </div>

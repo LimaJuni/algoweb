@@ -1,7 +1,5 @@
 'use client'
 
-import { Github, Twitter, Mail } from 'lucide-react'
-
 export default function Footer() {
   return (
     <footer className="bg-dark text-white py-16">
@@ -34,16 +32,10 @@ export default function Footer() {
           
           <div className="space-y-4">
             <h4 className="font-bold">Connect</h4>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Twitter size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Github size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Mail size={24} />
-              </a>
+            <div className="flex gap-4 text-2xl">
+              <a href="#" className="text-gray-400 hover:text-primary transition-colors">🐦</a>
+              <a href="#" className="text-gray-400 hover:text-primary transition-colors">💻</a>
+              <a href="#" className="text-gray-400 hover:text-primary transition-colors">📧</a>
             </div>
           </div>
         </div>

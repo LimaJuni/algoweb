@@ -3,26 +3,25 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Brain, MessageCircle, TrendingUp, Globe } from 'lucide-react'
 
 const features = [
   {
-    icon: Brain,
+    icon: '🧠',
     title: 'AI-Powered Learning',
     description: 'Real-time algorithmic explanations tailored to your learning pace and curiosity.'
   },
   {
-    icon: Globe,
+    icon: '🌍',
     title: 'Cultural Context',
     description: 'Complex CS concepts explained using familiar Cameroonian metaphors and landmarks.'
   },
   {
-    icon: TrendingUp,
+    icon: '📈',
     title: 'Progress Tracking',
     description: 'Visualize your mastery of data structures and algorithms with elegant analytics.'
   },
   {
-    icon: MessageCircle,
+    icon: '💬',
     title: 'Interactive Chat',
     description: 'Step-by-step debugging sessions with your AI lecturer for instant feedback.'
   }
@@ -60,7 +59,7 @@ export default function Features() {
               className="glass p-8 rounded-2xl group hover:shadow-xl transition-all"
             >
               <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-                <feature.icon size={32} className="text-primary group-hover:text-white" />
+                <span className="text-3xl">{feature.icon}</span>
               </div>
               
               <h3 className="text-xl font-bold mb-4">{feature.title}</h3>

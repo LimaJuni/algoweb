@@ -1,13 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Download, Smartphone } from 'lucide-react'
 import PhoneMockup from './3D/PhoneMockup'
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-orange-50 to-orange-100">
-      {/* Floating shapes */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl animate-pulse delay-1000" />
       
@@ -33,16 +31,14 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/25 transition-all"
             >
-              <Download size={24} />
-              Download APK
+              📱 Download APK
             </motion.button>
             
             <motion.button
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2 glass px-8 py-4 rounded-xl font-bold text-lg opacity-70"
             >
-              <Smartphone size={24} />
-              iOS Coming Soon
+              🍎 iOS Coming Soon
             </motion.button>
           </div>
         </motion.div>

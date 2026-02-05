@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { Download, Smartphone, QrCode } from 'lucide-react'
 
 export default function Download() {
   const ref = useRef(null)
@@ -12,7 +11,6 @@ export default function Download() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle email submission
     console.log('Email submitted:', email)
     setEmail('')
   }
@@ -21,7 +19,6 @@ export default function Download() {
     <section ref={ref} className="py-24 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* APK Download */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -30,7 +27,7 @@ export default function Download() {
           >
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-48 h-48 bg-white rounded-2xl shadow-inner flex items-center justify-center">
-                <QrCode size={120} className="text-gray-400" />
+                <span className="text-6xl">📱</span>
               </div>
               
               <div className="flex-1 text-center md:text-left">
@@ -44,14 +41,12 @@ export default function Download() {
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-primary/25 transition-all mx-auto md:mx-0"
                 >
-                  <Download size={24} />
-                  Download Now
+                  📥 Download Now
                 </motion.button>
               </div>
             </div>
           </motion.div>
 
-          {/* iOS Waitlist */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -81,8 +76,7 @@ export default function Download() {
                   type="submit"
                   className="flex items-center gap-2 bg-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-gray-800 transition-all"
                 >
-                  <Smartphone size={20} />
-                  Get Early Access
+                  🍎 Get Early Access
                 </motion.button>
               </div>
             </form>
