@@ -1,9 +1,7 @@
-'use client'
-
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import AppPreview from '@/components/AppPreview'
-import Download from '@/components/Download'
+import DownloadSection from '@/components/Download'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -12,7 +10,7 @@ export default function Home() {
       <Hero />
       <Features />
       <AppPreview />
-      <Download />
+      <DownloadSection />
       <Footer />
     </main>
   )
