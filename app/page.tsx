@@ -1,9 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
-import { Brain, MessageCircle, TrendingUp, Globe, Download, Smartphone } from 'lucide-react'
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import AppPreview from '@/components/AppPreview'
