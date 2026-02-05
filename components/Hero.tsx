@@ -30,6 +30,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/25 transition-all"
+              onClick={() => window.open('/apk/algotutor.apk', '_blank')}
             >
               📱 Download APK
             </motion.button>

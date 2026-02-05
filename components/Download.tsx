@@ -40,6 +40,7 @@ export default function Download() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-primary/25 transition-all mx-auto md:mx-0"
+                  onClick={() => window.open('/apk/algotutor.apk', '_blank')}
                 >
                   📥 Download Now
                 </motion.button>
