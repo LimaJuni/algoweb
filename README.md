@@ -10,7 +10,7 @@ A modern Next.js landing page for the AlgoTutor mobile app - an AI-powered algor
 - **React Three Fiber** for 3D phone mockup
 - **Lucide React** icons
 - Mobile-first responsive design
-- Performance optimized
+- Performance optimize
 
 ## Getting Started
 
